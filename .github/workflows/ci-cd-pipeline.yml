@@ -1,0 +1,17 @@
+name: CI/CD Pipeline
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reality Gate Verification Harness
+        run: python tests/reality_check_harness.py
+      - name: Setup Rust Toolchain
+        uses: dtolnay/rust-toolchain@stable
+      - name: Run High-Performance Rust State Engine
+        run: cargo run --release

@@ -1,0 +1,55 @@
+{
+  "name": "chandel-ai-mcp",
+  "version": "1.0.0",
+  "description": "Chandel AI Model Context Protocol Server for Sovereign Indigenous Dynastic Heritage, Bhar Rajvansh Civilization Memory, Fortified Architectural Geometry & Indigenous Governance Protocol",
+  "tools": [
+    {
+      "name": "audit_dynastic_heritage_provenance",
+      "description": "Authenticate epigraphic inscriptions, genealogical lineages, and historical heritage sites of the Chandel and Bhar Rajvansh dynasties",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "historical_site": {
+            "type": "string"
+          },
+          "epigraphic_record": {
+            "type": "string"
+          },
+          "dynastic_lineage": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "historical_site",
+          "epigraphic_record"
+        ]
+      }
+    },
+    {
+      "name": "disburse_heritage_citadel_grant",
+      "description": "Trigger automated micro-escrow releases for archaeological conservation, historical research grants, and restoration of ancestral water reservoirs and fortresses",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "category": {
+            "type": "string"
+          },
+          "recipient": {
+            "type": "string"
+          },
+          "amount_wei": {
+            "type": "string"
+          },
+          "proof_hash": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "category",
+          "recipient",
+          "amount_wei"
+        ]
+      }
+    }
+  ]
+}

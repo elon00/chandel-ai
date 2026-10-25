@@ -1,0 +1,5 @@
+target/
+*.exe
+*.pdb
+.DS_Store
+__pycache__/
