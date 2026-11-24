@@ -3,3 +3,6 @@ target/
 *.pdb
 .DS_Store
 __pycache__/
+
+# Lean 4 build artifacts
+lean_verify/.lake/
